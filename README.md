@@ -1,2 +1,2 @@
 # rust-namespace-example
-A small example showing how to clone a process into a namespace with Rust.
+This program is an ugly, C-like Rust translation of the C example at the bottom of `man 2 clone`. See that manpage (and many more) for more about what's going on here. The main interesting Rust-specific point is to avoid double-free errors by wrapping a few strings in `std::mem::ManuallyDrop`.
